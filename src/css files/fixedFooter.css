@@ -1,0 +1,25 @@
+.fixed__footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background-color: #191d28;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.fixed__footer > button {
+  font-size: 15px;
+  height: 35px;
+  width: 250px;
+  color: #17a2b8;
+  border-color: #17a2b8;
+  background-color: #191d28;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.fixed__footer > button:hover {
+  cursor: pointer;
+  background-color: #17a2b8;
+  color: #fff;
+}

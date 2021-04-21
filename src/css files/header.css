@@ -1,0 +1,196 @@
+.Header {
+  padding: 20px 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*HEADER LEFT*/
+
+.header__left {
+  flex: 33.33%;
+  width: 100%;
+  margin-top: -14px;
+  padding-left: 10px;
+}
+.header__left > .header__left__container {
+  padding: 0 5px 7px 0;
+  width: 85%;
+}
+.header__left__container > .image__holder {
+  width: 80%;
+}
+.header__left__container > .header__title__footer {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  color: gray;
+  margin-top: -11px;
+  margin-left: 5px;
+}
+.header__left__container > .header__title__footer > span {
+  color: rgb(61, 198, 193);
+}
+.header__left__container > .image__holder,
+.header__left__container > .header__title__footer > span:hover {
+  cursor: pointer;
+}
+/*HEADER MIDDLE*/
+
+.header__middle {
+  flex: 33.33%;
+  padding: 10px 5px;
+}
+.header__middle__container {
+  /* margin-top: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+}
+
+.header__middle__container > button {
+  margin: 0 10px;
+  vertical-align: middle;
+  height: 36px;
+  border-radius: 10px;
+  background-color: #2e3241;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  border: none;
+  padding: 0 15px;
+}
+
+.header__middle__container > .lightTheme {
+  color: #0c0f48;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 2px #ddd;
+}
+.header__middle__container > .clicked {
+  color: #fff;
+  background-color: #545b62;
+  border: 2px solid #474b50;
+}
+.header__middle__container > button:hover {
+  cursor: pointer;
+}
+/*HEADER RIGHT*/
+.header__right {
+  flex: 33.33%;
+  padding: 10px 5px;
+}
+
+.header__right__container {
+  float: right;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header__right__container > .header__right__timer {
+  position: relative;
+  height: 36px;
+  width: 36px;
+  padding: 10px;
+  margin-top: -22px;
+  margin-right: 20px;
+}
+.header__right__timer > .timer {
+  position: absolute;
+  color: #3dc6c1;
+  left: 20px;
+  top: 20px;
+}
+.button__header__right__button {
+  margin: 10px !important;
+  padding: 6px 20px !important;
+  border-radius: 10px !important;
+  background-color: #3dc6c1 !important;
+  text-transform: none !important;
+}
+.button__text {
+  color: #fff;
+  font-family: "oswald", sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.telegram__logo {
+  height: 15px;
+}
+.toggle__switch {
+  margin-left: 5px;
+}
+
+/*adding media query*/
+@media only screen and (max-width: 768px) {
+  .header__left {
+    flex: 100%;
+    width: 100%;
+    margin-top: 0;
+    padding-left: 0;
+  }
+  .header__left > .header__left__container {
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .header__left__container > .image__holder {
+    width: 85%;
+    padding-left: 12.5%;
+  }
+  .header__left__container > .header__title__footer {
+    margin-top: -12px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: -5px;
+  }
+  .header__middle {
+    flex: 100%;
+    width: 100%;
+  }
+  .header__middle__container {
+    height: 41px;
+    padding-top: 10px;
+  }
+  .header__middle__container > button {
+    margin: 0 5px;
+    vertical-align: middle;
+    height: 31px;
+    border-radius: 10px;
+    background-color: #2e3241;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    text-align: center;
+    border: none;
+    padding: 3px 9px;
+  }
+  .header__right {
+    flex: 100%;
+    width: 100%;
+  }
+  .header__right__container {
+    float: none;
+    margin-top: -10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__right__container > .header__right__timer {
+    height: 25px;
+    width: 25px;
+    margin-top: -30px;
+    margin-right: 32px;
+  }
+
+  .button__header__right__button {
+    padding: 6px 10px !important;
+  }
+}

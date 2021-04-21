@@ -1,0 +1,78 @@
+.best__price__container {
+  padding: 0 30px;
+  max-width: 100vw;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+h3 {
+  color: gray;
+  font-weight: normal;
+  font-size: 30px;
+}
+.values {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grp > h3 {
+  padding-top: 20px;
+  font-weight: 400;
+  color: #5dc7c2;
+  font-size: 40px;
+}
+.grp > p {
+  font-size: 22px;
+  color: grey;
+}
+
+.money_amt > h3 {
+  font-size: 80px;
+  color: #fff;
+}
+.money_amt > .lightTheme {
+  color: #0c0f48;
+}
+.money_amt > p {
+  color: gray;
+  font-size: 18px;
+}
+.image__holder {
+  padding-top: 35px;
+  width: 100%;
+}
+.image__holder:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 18px;
+  }
+  .values {
+    padding: 0 10px;
+  }
+  .grp {
+    margin: -8px 5px 0;
+  }
+
+  .grp > h3 {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .grp > p {
+    font-weight: 300;
+    font-size: 10px;
+  }
+  .money_amt > h3 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .money_amt > p {
+    color: gray;
+    margin-top: 3px;
+    font-size: 10px;
+  }
+  .image__holder {
+    padding-top: 35px;
+  }
+}

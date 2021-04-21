@@ -1,0 +1,32 @@
+.Footer__container {
+  min-height: 80px;
+}
+.footer__header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__header__left {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__header__left > div,
+.footer__header__right > div {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888686;
+}
+
+.footer__header__left > div > span {
+  color: rgb(61, 198, 193);
+}
+@media only screen and (max-width: 768px) {
+  .footer__header__left {
+    width: 84%;
+  }
+  .footer__header__left > div {
+    font-size: 10px;
+  }
+}

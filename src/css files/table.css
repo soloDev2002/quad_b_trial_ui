@@ -1,0 +1,94 @@
+.container {
+  padding: 8px 20px 0;
+  display: flex;
+  flex-direction: column;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.row__header {
+  margin: 8px 0 4px 0;
+  padding: 5px 0;
+  border-radius: 10px;
+  display: flex;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  justify-content: space-between;
+  font-size: 24px;
+  color: gray;
+}
+.row__header > .buy_sell_price,
+.row__header > .decrement,
+.row__header > .last_traded_price,
+.platform,
+.row__header.difference,
+.row__header > .serial:hover {
+  cursor: pointer;
+}
+.row {
+  margin: 8px 0;
+  padding: 5px 0;
+  border-radius: 10px;
+  display: flex;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  justify-content: space-between;
+  font-size: 25px;
+  color: #fff;
+  background-color: #2e3241;
+}
+.serial {
+  text-align: center;
+  width: 6%;
+}
+.platform,
+.last_traded_price,
+.difference,
+.savings {
+  width: 16%;
+  text-align: center;
+}
+.buy_sell_price {
+  width: 30%;
+  text-align: center;
+}
+.row > .difference,
+.row > .savings {
+  color: #5dc7c2;
+}
+.row > .decrement {
+  color: #da5757;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.row > .lightTheme {
+  background-color: #f8f9fa;
+}
+.lightTheme > .platform {
+  color: black;
+}
+.lightTheme > .serial,
+.lightTheme > .last_traded_price,
+.lightTheme > .buy_sell_price {
+  color: #0c0f48;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-bottom: -12px;
+  }
+  .row,
+  .row__header {
+    width: 786px;
+    font-family: Oswald;
+    font-size: 15px;
+  }
+  .row__header {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .platform > span > img {
+    max-height: 10px;
+  }
+}
